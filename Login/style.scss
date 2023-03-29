@@ -105,13 +105,15 @@ body{
     text-align: center;
     font-size: 18px;
     height: 55px;
-    margin-right: 180px; //cambiar tamaño del boton
-    margin-left: 180px;
+    margin: 0 150px;
+    //margin-right: 180px; //cambiar tamaño del boton
+    //margin-left: 180px;
   }
 
   .login-form-footer{
-    h1{
+    h2{
       margin-top: 160px;
+      margin-bottom: 20px;
       font-size: 18px;
       margin-left: -90px;
       color: #0D5FBD;
