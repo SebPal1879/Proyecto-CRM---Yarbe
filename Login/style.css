@@ -85,7 +85,7 @@ input[type=password] {
   border-radius: 10px;
 }
 
-button {
+button.Continue {
   border: none;
   background: #0D5FBD;
   color: white;
@@ -94,12 +94,12 @@ button {
   text-align: center;
   font-size: 18px;
   height: 55px;
-  margin-right: 180px;
-  margin-left: 180px;
+  margin: 0 150px;
 }
 
 .login-form-footer h1 {
   margin-top: 160px;
+  margin-bottom: 20px;
   font-size: 18px;
   margin-left: -90px;
   color: #0D5FBD;
