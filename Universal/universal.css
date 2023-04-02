@@ -5,25 +5,24 @@
     margin: 0;
 }
 
-
 .navbar {
     background-color: white;
-    border: 1px solid #EAEBEB;
-    height: 10vh;
+    border-bottom: 1px solid #EAEBEB;
+    height: 100px;
     font-size: 22px;
 }
 
-#navbar img {
-    display: block;
-    justify-content: space-around;
-    padding-top: 10px;
+.navbar img {
+    width: 60px;
     margin: auto;
-    width: 56px;
 }
 
 .separator {
-    width: 5vw;
-    height: 8vh;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
     border-right: 1px solid #EAEBEB;
 }
 
@@ -42,18 +41,18 @@
 
 #end-section {
     width: 110px;
-    height: 8vh;
+    height: 60px;
+    align-items: center;
+    display: flex;
     border-left: 1px solid #EAEBEB;
 }
 
 #end-section #notifbell {
-    display: inline-block;
     width: 20px;
 }
 
 #end-section #icircle {
     margin-left: 10px;
-    display: inline-block;
     width: 40px;
 }
 
