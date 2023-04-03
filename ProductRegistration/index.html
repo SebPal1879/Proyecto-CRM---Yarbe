@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <div class="separator">
-          <a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png" 
+          <a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png"
               alt="Yarbe logo, cross inside square only, no text"></a>
         </div>
         <!--El div es para poder poner la línea vertical a la derecha-->
@@ -46,7 +46,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Manage<article>Products</article></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item badge" id="current">
               <a class="nav-link" href="#">Add<article>Products</article></a>
             </li>
             <li class="nav-item">
@@ -71,24 +71,150 @@
         <h1>Product Registration</h1>
         <button type="button" class="btn btn-outline-primary ms-auto " id="add-product">Add another product</button>
       </div>
-      <section class="d-flex justify-content-between">
-        <div class="contenedor">
+      <section class="d-flex justify-content-between row">
+        <div class="contenedor col-6">
           <h4>General specifications</h4>
           <section>
-            <form class="col d-flex" style="background-color: blanchedalmond;">
+            <form class="row d-flex">
               <div class="col-6">
                 <label for="prodTName" class="form-label">Product trade name</label>
                 <input type="text" name="form-control" id="prodTName">
               </div>
-              <div class="col-6">
-                <label id="type-b" for="prodFName" class="form-label">Product formal name</label>
+              <div class="col-6" id="type-b">
+                <label for="prodFName" class="form-label">Product formal name</label>
                 <input type="text" class="d-flex" name="form-control" id="prodFName">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="prodID" class="form-label">Product ID</label>
+                <input type="text" class="d-flex" name="form-control" id="prodID">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="prodBN" class="form-label">Product barcode number</label>
+                <input type="text" class="d-flex" name="form-control" id="prodBN">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="prodPcr" class="form-label">Producer</label>
+                <input type="text" class="d-flex" name="form-control" id="prodPcr">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="prodSlrs" class="form-label">Seller(s)</label>
+                <input type="text" class="d-flex" name="form-control" id="prodSlrs">
+              </div>
+              <div class="d-flex" id="list">
+                <div class="dropdown">
+                  <label for="dropdwn" class="form-label d-block">Countries available</label>
+                  <button class="btn btn-list dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" id="btn-list">
+                    Select country(ies) available
+                  </button>
+                  <ul class="dropdown-menu" id="dropdwn">
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-check-input" type="checkbox" value="Colombia" id="CO">
+                        <label class="form-check-label" for="CO">Colombia</label>
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-check-input" type="checkbox" value="Spain" id="SP">
+                        <label class="form-check-label" for="SP">Spain</label>
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <input class="form-check-input" type="checkbox" value="United States" id="US">
+                        <label class="form-check-label" for="US">United States</label>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </form>
           </section>
         </div>
-        <div class="contenedor">
+        <div class="contenedor col-6">
           <h4>Consumption specifications</h4>
+          <section>
+            <form class="row d-flex">
+              <div class="col-6">
+                <label for="minAge" class="form-label">Minimum age recommended</label>
+                <input type="text" name="form-control" id="minAge">
+              </div>
+
+              <div class="col-6" id="type-b">
+                <label for="maxAge" class="form-label">Maximum age recommended</label>
+                <input type="text" class="d-flex" name="form-control" id="maxAge">
+              </div>
+
+              <div class="col-6">
+                <label for="tgMkt" class="form-label">Target Market</label>
+                <input type="text" class="d-flex" name="form-control" id="tgMkt">
+              </div>
+
+              <div class="col-6">
+                <label for="admRt" class="form-label">Route of administration</label>
+                <input type="text" class="d-flex" name="form-control" id="admRt">
+              </div>
+
+              <div class="col-6">
+                <label for="prodTp" class="form-label">Product type</label>
+                <input type="text" class="d-flex" name="form-control" id="prodTp">
+              </div>
+
+              <div class="col-6">
+                <label for="lifeTime" class="form-label">Lifetime</label>
+
+                <section class="d-flex">
+                  <input type="text" name="form-control" id="lifeTime">
+                  <section class="btn-group">
+                    <button type="button" class="btn" id="btn-list">Time</button>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                      aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Hours</a></li>
+                      <li><a class="dropdown-item">Days</a></li>
+                      <li><a class="dropdown-item">Weeks</a></li>
+                      <li><a class="dropdown-item">Months</a></li>
+                      <li><a class="dropdown-item">Years</a></li>
+                    </ul>
+                  </section>
+                </section>
+
+              </div>
+              <div class="col-6 d-flex">
+                <section>
+                  <label for="qty" class="form-label" id="qty">Quantity</label>
+                  <input type="text" class="d-flex" name="form-control" id="qty">
+                </section>
+                <section class="ms-auto">
+                  <label for="amt" class="form-label">Amount per unit</label>
+                  <section class="d-flex">
+                    <input  type="text" name="form-control" id="amt">
+                    <section class="btn-group ms-auto">
+                      <button type="button" class="btn" id="btn-list">mg</button>
+                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">mg</a></li>
+                        <li><a class="dropdown-item">g</a></li>
+                        <li><a class="dropdown-item">ml</a></li>
+                      </ul>
+                    </section>
+                  </section>
+                </section>
+
+              </div>
+              <div class="col-6">
+                <label for="prodTp" class="form-label">Contraindications</label>
+                <input type="text" class="d-flex" name="form-control" id="prodTp">
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="contenedor col-6">
+          <h4>Requesting client</h4>
+        </div>
+        <div class="contenedor col-6">
+          <h4>Other</h4>
         </div>
       </section>
 
