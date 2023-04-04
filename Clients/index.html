@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clients</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../Universal/universal.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <div class="separator">
+          <a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png"
+              alt="Yarbe logo, cross inside square only, no text"></a>
+        </div>
+        <!--El div es para poder poner la línea vertical a la derecha-->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center">
+            <div class="a1">
+              <li class="nav-item badge" id="current">
+                <a class="nav-link" href="#">
+                  <article id="a2">Clients</article>
+                </a>
+              </li>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Update<article>Delete</article>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Manage<article>Products</article></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Add<article>Products</article></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Interaction<article>Management</article></a>
+            </li>
+          </ul>
+        </div>
+        <div class="ms-auto px-3" id="end-section">
+          <img src="../Imagenes/bell.svg" alt="Notification bell" id="notifbell">
+          <img src="../Imagenes/user.svg" alt="Icon circle" id="icircle">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- /Header -->
+
+  <!-- Main -->
+  <main>
+    <section class="Registration-contact ">
+      <div class="container-fluid">
+        <form class="row d-flex">
+        <div class="container col-6">
+          <h1>Clients</h1>
+        </div>
+        <div class="container col-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter the Nit Company" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button type="button" class="btn btn-outline-success">Search</button>
+        </div>
+      </form>
+      </div>
+      </div>
+      <section class="d-flex justify-content-between row">
+        <div class="contenedor col-6">
+          <h4>Customer Data</h4>
+          <section>
+            <form class="row d-flex">
+              <div class="col-6">
+                <label for="clientsName" class="form-label">Customer Name</label>
+                <input type="text" name="form-control" id="ClientsName">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="CompanyName" class="form-label">Company Name</label>
+                <input type="text" class="d-flex" name="form-control" id="companyName">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="companyID" class="form-label">Nit Company</label>
+                <input type="text" class="d-flex" name="form-control" id="companyID">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="Email" class="form-label">Email</label>
+                <input type="text" class="d-flex" name="form-control" id="Email">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="Address" class="form-label">Address</label>
+                <input type="text" class="d-flex" name="form-control" id="Address">
+              </div>
+              <div class="col-6" id="type-b">
+                <label for="contactPhone" class="form-label">Contact Phone</label>
+                <input type="text" class="d-flex" name="form-control" id="contactPhone">
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto" id="type-b">
+                <button type="button" class="btn btn-outline-success btn-lg">Update</button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="contenedor col-6">
+          <h4>Resquest</h4>
+          <section>
+            <form class="row d-flex">
+              <div class="container mt-4">
+                <h5>Consult Request</h5>
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Tiketd</th>
+                      <th>Client Name</th>
+                      <th>Creation Date</th>
+                      <th>Close Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>YB220000</td>
+                      <td>Camilo Días</td>
+                      <td>16/02/2023</td>
+                      <td>16/03/2023</td>
+                    </tr>
+                    <tr>
+                      <td>YB230000</td>
+                      <td>Jorge Barrientos</td>
+                      <td>16/02/2023</td>
+                      <td>16/03/2023</td>
+                    </tr>
+                    <tr>
+                      <td>YB240000</td>
+                      <td>Davir Ateaga</td>
+                      <td>16/02/2023</td>
+                      <td>16/03/2023</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter the ticket" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button type="button" class="btn btn-outline-success">Search</button>
+              </div>
+
+            </form>
+          </section>
+        </div>
+        <div class="Container col-12">
+          <h4>Customer Products</h4>
+          <form class="row d-flex">
+          <div class="card container-md" style="width:400px">
+            <img class="card-img-top" src="../Imagenes/Logotipo.png"alt="Card image">
+            <div class="card-body">
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Date</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Tiketd</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <a href="#" class="btn btn-outline-success btn-lg">Request</a>
+            </div>
+          </div>
+          <div class="card container-md" style="width:400px">
+            <img class="card-img-top" src="../Imagenes/Logotipo.png"alt="Card image">
+            <div class="card-body">
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Date</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Tiketd</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <a href="#" class="btn btn-outline-success btn-lg">Request</a>
+            </div>
+          </div>
+        </form>
+        </div>
+      </section>
+
+    </section>
+  </main>
+  <!-- /Main -->
+
+  <!-- footer -->
+  <footer>
+    <section class="container-fluid">
+      <section class="row">
+        <figure class="col-6">
+          <img src="../Imagenes/Logotipo.png" alt="Yarbe logo, text included">
+        </figure>
+        <h1 class="col-6">
+          Project CRM
+        </h1>
+      </section>
+      <div class="row">
+        <ul class="row row-cols-2 col-6">
+          <li>
+            Name of the company: <span id="mtext">Yarbe</span>
+          </li>
+          <li>
+            Email: <span id="mtext">contact@yarbe.com</span>
+          </li>
+          <li>
+            Company NIT: <span id="mtext">899998444-2</span>
+          </li>
+          <li>
+            Contact phone: <span id="mtext">+57 344 5550099</span>
+          </li>
+          <li>
+            Address: <span id="mtext">Calle Joaquin Turina, 2, 28224, Pozuelo Alarcon Madrid, Madrid</span>
+          </li>
+        </ul>
+        <ul class="col-6">
+          <li id="second-half">
+            Teacher's name: <span id="mtext">David Córdoba Pimienta</span>
+          </li>
+          <li id="second-half">
+            Student's name: <span id="mtext">Juan Estiven Quiroz Montoya</span>
+          </li>
+          <li id="second-half">
+            Student's name: <span id="mtext">Jorge Eliécer Monsalve Zuluaga</span>
+          </li>
+          <li id="second-half">
+            Student's name: <span id="mtext">Sebastián Alejandro Palacio Alzate</span>
+          </li>
+        </ul>
+      </div>
+  </footer>
+  <!-- /footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

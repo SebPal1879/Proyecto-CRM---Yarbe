@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bodoni MT";
+}
+
+.Registration-contact {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(48, 48, 48, 0.1647058824);
+  border: 1px solid #E7E7E7;
+  padding: 40px;
+  margin: 50px 110px;
+}
+
+.contenedor {
+  margin-top: 30px;
+  border-radius: 18px;
+  border: 1px solid #E7E7E7;
+  overflow: hidden;
+  padding: 15px 30px;
+  position: relative;
+  width: 48%;
+}
+.Container {
+  margin-top: 30px;
+  border-radius: 18px;
+  border: 1px solid #E7E7E7;
+  overflow: hidden;
+  padding: 15px 30px;
+  position: relative;
+  width: 100%;
+}
+
+.contenedor h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Registration-contact h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#current {
+  font-size: 22px !important;
+  background-color: #38D688;
+}
+
+#add-product {
+  background-color: #F6F9FF;
+  color: #666666;
+}
+
+#add-product:hover {
+  background-color: #E6EDFF;
+}
+
+input {
+  padding-left: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  background-color: #F6F9FF;
+  height: 44px;
+  width: 100%;
+}
+
+main form {
+  font-weight: bold;
+}
+
+main form div {
+  padding-bottom: 20px;
+}
+
+#list {
+  justify-content: center;
+}
+
+.form-check-label { /* Si se hace clic en una opción de check en el espacio vacío de un dropdown, no lo va a seleccionar, ya que este por defecto se selecciona dándole clic al espacio del texto*/
+  width: 100%;
+}
+
+#btn-list{
+  border: 1px solid #CCCCCC;
+  background-color: #F6F9FF;
+  height: 44px;
+}
+
+#lifeTime {
+  width: 80%;
+}
+
+#qty {
+  width: 90%;
+}
+
+
