@@ -107,7 +107,7 @@
                     aria-expanded="false" id="btn-list">
                     Select country(ies) available
                   </button>
-                  <ul class="dropdown-menu" id="dropdwn">
+                  <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">
                         <input class="form-check-input" type="checkbox" value="Colombia" id="CO">
                         <label class="form-check-label" for="CO">Colombia</label>
@@ -129,6 +129,7 @@
             </form>
           </section>
         </div>
+
         <div class="contenedor col-6">
           <h4>Consumption specifications</h4>
           <section>
@@ -187,13 +188,13 @@
                 <section class="ms-auto">
                   <label for="amt" class="form-label">Amount per unit</label>
                   <section class="d-flex">
-                    <input  type="text" name="form-control" id="amt">
+                    <input type="text" name="form-control" id="amt">
                     <section class="btn-group ms-auto">
                       <button type="button" class="btn" id="btn-list">mg</button>
                       <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
                         aria-expanded="false" data-bs-reference="parent" id="btn-list">
                       </button>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu dropdown-menu--overlap">
                         <li><a class="dropdown-item">mg</a></li>
                         <li><a class="dropdown-item">g</a></li>
                         <li><a class="dropdown-item">ml</a></li>
@@ -212,12 +213,82 @@
         </div>
         <div class="contenedor col-6">
           <h4>Requesting client</h4>
+
+          <section>
+            <form class="row d-flex">
+              <div class="col-6">
+                <label for="csID" class="form-label">Customer UID</label>
+                <input type="text" name="form-control" id="csID">
+              </div>
+              <div class="col-6">
+                <label for="csName" class="form-label">Customer name</label>
+                <input type="text" name="form-control" id="csName">
+              </div>
+            </form>
+          </section>
+
         </div>
         <div class="contenedor col-6">
           <h4>Other</h4>
+          <section>
+            <form class="d-flex row" id="other">
+              
+              <section class="col-3">
+                <label for="" class="form-label d-block">Initial stock?</label>
+                <section class="btn-group me-auto">
+                  <button type="button" class="btn" id="btn-list">Yes</button>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu--overlap ">
+                    <li><a class="dropdown-item">Yes</a></li>
+                    <li><a class="dropdown-item">No</a></li>
+                  </ul>
+                </section>
+              </section>
+
+              <div class="col-4" >
+                <label for="isku" class="form-label">Initial stock units</label>
+                <input type="text" class="d-flex" name="form-control" id="isku">
+              </div>
+
+              <section class="col ms-auto">
+                <label for="" class="form-label d-flex">Already on the market?</label>
+                <section class="btn-group me-auto">
+                  <button type="button" class="btn" id="btn-list">Yes</button>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu--overlap ">
+                    <li><a class="dropdown-item">Yes</a></li>
+                    <li><a class="dropdown-item">No</a></li>
+                  </ul>
+                </section>
+              </section>
+            </form>
+          </section>
+
+
+
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+
+
         </div>
       </section>
-
+      <div class="d-flex justify-content-end final">
+        <button type="button" class="btn btn-outline-primary" id="cl">Cancel</button>
+        <button type="button" class="btn btn-outline-primary" id="sv">Save</button>
+        <button type="button" class="btn btn-outline-primary" id="add">Add</button>
+      </div>
     </section>
   </main>
   <!-- /Main -->

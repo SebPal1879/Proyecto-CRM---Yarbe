@@ -40,12 +40,20 @@ body {
   background-color: #38D688;
 }
 
-#add-product {
+#add-product,
+#cl,
+#sv,
+#add {
+  margin-left: 40px;
+  min-width: 130px;
   background-color: #F6F9FF;
   color: #666666;
 }
 
-#add-product:hover {
+#add-product:hover,
+#cl:hover,
+#sv:hover,
+#add:hover {
   background-color: #E6EDFF;
 }
 
@@ -70,11 +78,12 @@ main form div {
   justify-content: center;
 }
 
-.form-check-label { /* Si se hace clic en una opción de check en el espacio vacío de un dropdown, no lo va a seleccionar, ya que este por defecto se selecciona dándole clic al espacio del texto*/
+.form-check-label {
+  /* Si se hace clic en una opción de check en el espacio vacío de un dropdown, no lo va a seleccionar, ya que este por defecto se selecciona dándole clic al espacio del texto*/
   width: 100%;
 }
 
-#btn-list{
+#btn-list {
   border: 1px solid #CCCCCC;
   background-color: #F6F9FF;
   height: 44px;
@@ -88,4 +97,23 @@ main form div {
   width: 90%;
 }
 
+.dropdown {
+  position: absolute !important;
+}
 
+.dropdown-menu {
+  position: absolute !important;
+}
+
+.dropdown-menu .dropdown-item {
+  position: relative !important;
+
+}
+
+.dropdown-menu--overlap {
+  z-index: 9999;
+}
+
+.final {
+  padding-top: 40px;
+}
