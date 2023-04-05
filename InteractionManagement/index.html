@@ -16,8 +16,10 @@
   <header>
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
-        <div class="separator"><a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png"
-              alt="Yarbe logo, cross inside square only, no text"></a></div>
+        <div class="separator">
+          <a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png"
+              alt="Yarbe logo, cross inside square only, no text"></a>
+        </div>
         <!--El div es para poder poner la línea vertical a la derecha-->
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Add<article>Products</article></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item badge" id="current">
               <a class="nav-link active" aria-current="page" href="#">Interaction<article>Management</article></a>
             </li>
           </ul>
@@ -62,13 +64,50 @@
 
   <!-- /Header -->
 
-  <!-- main -->
- <main class="container-fluid py-4" id="ct-main"><!--offset-2  está causando overflow-->
-    <section class="col-8" style="background-color: aqua; border-radius: 10px;">
-      a
+  <!-- Main -->
+  <main>
+    <section class="main-box">
+      <div class="d-flex">
+        <h2> Ticket XXXX</h2>
+        <div class="ms-auto">
+          <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Schedule</button>
+          <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Escalate</button>
+          <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Hold</button>
+          <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Close</button>
+        </div>
+      </div>
+      <section class="conte container-fluid ">
+        <div class="contenedor uno mx-2">
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          
+        </div>
+        <div class="contenedor uno mx-2">
+          <h4>Customer information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+          <h4>Ticket information</h4>
+        </div>
+        <div class="contenedor uno mx-2" style="position: re;">
+          <h4>Customer tickets</h4>
+        </div>
+        <div class="contenedor uno mx-2">
+          <h4>Call log</h4>
+        </div>
+        <div class="contenedor uno mx-2">
+          <h4>Email log</h4>
+        </div>
+
+      </section>
     </section>
   </main>
-  <!-- /main -->
+  <!-- /Main -->
 
   <!-- footer -->
   <footer>
@@ -81,8 +120,8 @@
           Project CRM
         </h1>
       </section>
-      <div class="row"><!--Recordar seccionar para que los elementos se puedan repartir-->
-        <ul class="row row-cols-2 col-6"> <!--Desafortunadamente list-group no funciona bien con row-->
+      <div class="row">
+        <ul class="row row-cols-2 col-6">
           <li>
             Name of the company: <span id="mtext">Yarbe</span>
           </li>
@@ -98,23 +137,8 @@
           <li>
             Address: <span id="mtext">Calle Joaquin Turina, 2, 28224, Pozuelo Alarcon Madrid, Madrid</span>
           </li>
-          <!-- <li class="col">
-            <span>Name of the company: </span><span>Yarbe</span>
-          </li>
-          <li class="col-12">
-            <span>Name of the compaany: </span><span>Yarbe</span>
-          </li>
-          <li class="col">
-            <span>Name of the company: </span><span>Yarbe</span>
-          </li>
-          <li class="col">
-            <span>Name of the company: </span><span>Yarbe</span>
-          </li>
-          <li class="col">
-            <span>Name of the company: </span><span>Yarbe</span>
-          </li> -->
         </ul>
-        <ul class="col-6"> <!--Desafortunadamente list-group no funciona bien con row-->
+        <ul class="col-6">
           <li id="second-half">
             Teacher's name: <span id="mtext">David Córdoba Pimienta</span>
           </li>

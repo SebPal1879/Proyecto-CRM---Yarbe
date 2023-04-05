@@ -25,36 +25,11 @@ body {
   width: 48%;
 }
 
-.contenedor h4 {
-  font-size: 20px;
-  font-weight: bold;
-}
+
 
 .Registration-contact h1 {
   font-size: 26px;
   font-weight: bold;
-}
-
-#current {
-  font-size: 22px !important;
-  background-color: #38D688;
-}
-
-#add-product,
-#cl,
-#sv,
-#add {
-  margin-left: 40px;
-  min-width: 130px;
-  background-color: #F6F9FF;
-  color: #666666;
-}
-
-#add-product:hover,
-#cl:hover,
-#sv:hover,
-#add:hover {
-  background-color: #E6EDFF;
 }
 
 input {

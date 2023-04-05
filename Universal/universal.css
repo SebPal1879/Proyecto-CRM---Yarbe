@@ -5,6 +5,31 @@
     margin: 0;
 }
 
+
+#current {
+    font-size: 22px !important;
+    background-color: #38D688;
+}
+
+.contenedor h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+.end-btn {
+    justify-content: end;
+    margin-left: 40px;
+    min-width: 130px;
+    background-color: #F6F9FF;
+    color: #666666;
+}
+
+.end-btn:hover {
+    color: #666666;
+    background-color: #E6EDFF;
+}
+
+
 .navbar {
     background-color: white;
     border-bottom: 1px solid #EAEBEB;
