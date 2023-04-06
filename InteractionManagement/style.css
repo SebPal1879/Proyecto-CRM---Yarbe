@@ -21,32 +21,33 @@
     margin-top: 30px;
     border-radius: 18px;
     border: 1px solid #E7E7E7;
-    overflow: hidden;
     padding: 15px 30px;
     position: relative;
     max-height: 10%;
     width: 48%;
-    
+    float: left;
 }
 
 .conte {
     /* display: block; */
-    background-color: darkorange;
+    /* background-color: darkorange; */
     /* overflow: hidden; */
     /* margin: auto; */
     padding-bottom: 15px;
+    overflow: auto;
 }
 
-.conte::after {
+/* .conte::after {
     content: "";
     display: inline-block;
     width: 100%;
-}
+} */
 
 
 .uno {
-    float: left;
+    clear: none;
 } 
+
 
 /* .contenedor {
     margin-top: 30px;
@@ -77,3 +78,22 @@
 } 
 
  */
+
+ #drpdwn {
+    width: 100%;
+ }
+
+ .dropdown-toggle {
+    right: 0 !important;
+    left: auto !important;
+ }
+
+ #emailCom{
+    min-height: 500px;
+    resize: both;
+    max-width: 100%;
+ }
+ 
+ input {
+    text-align: start;
+ }

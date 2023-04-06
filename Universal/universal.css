@@ -14,7 +14,7 @@
 .contenedor h4 {
     font-size: 20px;
     font-weight: bold;
-  }
+}
 
 .end-btn {
     justify-content: end;
@@ -81,11 +81,14 @@
     width: 40px;
 }
 
+
+
 footer {
     background-color: #EFEFEF;
     padding-left: 60px;
     padding-top: 30px;
     padding-bottom: 10px;
+    bottom: 0;
 }
 
 footer img {

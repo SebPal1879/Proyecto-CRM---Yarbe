@@ -9,6 +9,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="../Universal/universal.css">
+  <link rel="stylesheet" href="../ProductRegistration/style.css">
 </head>
 
 <body>
@@ -65,11 +66,11 @@
   <!-- /Header -->
 
   <!-- Main -->
-  <main>
+  <main class="container-fluid">
     <section class="main-box">
       <div class="d-flex">
         <h2> Ticket XXXX</h2>
-        <div class="ms-auto">
+        <div class="ms-auto sec">
           <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Schedule</button>
           <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Escalate</button>
           <button type="button" class="btn btn-outline-primary end-btn" id="action-btn">Hold</button>
@@ -79,33 +80,194 @@
       <section class="conte container-fluid ">
         <div class="contenedor uno mx-2">
           <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          
+          <div class="row d-flex">
+            <div class="col-6">
+              <h4>Case clasification</h4>
+              <p>Stock issue</p>
+            </div>
+            <div class="col-6">
+              <h4>Team handling</h4>
+              <p>SAC Manager</p>
+            </div>
+            <div class="col-6">
+              <h4>Contact method</h4>
+              <div class="dropdown ">
+                <button class="btn dropdown-toggle dropdown-menu-end" id="drpdwn" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Select contact method
+                </button>
+                <ul class="dropdown-menu" id="drpdwn">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <h4>Status</h4>
+              <p>aa</p>
+            </div>
+            <div class="col-6">
+              <h4>Origin date</h4>
+              <p>aa</p>
+            </div>
+            <div class="col-6">
+              <h4>Expected outcome</h4>
+              <p>aa</p>
+            </div>
+            <div class="col ">
+              <h2>Interactions in the last seven days</h2>
+              <img src="../Imagenes/Logotipo.png" width="100%" alt="">
+            </div>
+
+          </div>
+
         </div>
         <div class="contenedor uno mx-2">
           <h4>Customer information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
-          <h4>Ticket information</h4>
+          <div class="row d-inline-flex">
+            <div class="col-6">
+              <h4>Customer name</h4>
+              <p>John Doe</p>
+            </div>
+            <div class="col-6">
+              <h4>Customer UID</h4>
+              <p>XXXXXXXXX</p>
+            </div>
+            <div class="col-6 ">
+              <h4>Customer email</h4>
+              <div class="d-flex">
+                <p>email@domain.com</p>
+                <div class="ms-auto px-3">
+                  <img src="../Imagenes/envelope.svg" class="ms-auto" alt="Email icon">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-6">
+              <h4>Customer PN</h4>
+              <div class="d-flex">
+                <p>(555) 123-4567</p>
+                <div class="ms-auto px-3">
+                  <img src="../Imagenes/phoneOBC.svg" class="ms-auto" alt="Phone icon, outbound">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contenedor uno mx-2" style="position: re;">
+        <div class="contenedor uno mx-2">
           <h4>Customer tickets</h4>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Ticket number</th>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Closed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">XXXXX</th>
+                <td>12/02/2023</td>
+                <td>Inquiry</td>
+                <td>Y</td>
+              </tr>
+              <tr>
+                <th scope="row">XXXXX</th>
+                <td>12/02/2023</td>
+                <td>Complaint</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <th scope="row">XXXXX</th>
+                <td>12/02/2023</td>
+                <td>Request</td>
+                <td>Y</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="contenedor uno mx-2">
           <h4>Call log</h4>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Phone number</th>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Ans.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">(855) 123-4567</th>
+                <td>12/02/2023</td>
+                <td><img src="../Imagenes/phoneOBC.svg" alt="Phone icon, outbound"></td>
+                <td>Y</td>
+              </tr>
+              <tr>
+                <th scope="row">(855) 123-4567</th>
+                <td>12/02/2023</td>
+                <td><img src="../Imagenes/phoneOBC.svg" alt="Phone icon, outbound"></td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <th scope="row">(855) 123-4567</th>
+                <td>12/02/2023</td>
+                <td><img src="../Imagenes/phoneIBC.svg" alt="Phone icon, outbound"></td>
+                <td>Y</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="contenedor uno mx-2">
           <h4>Email log</h4>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Sender email address</th>
+                <th scope="col">Date</th>
+                <th scope="col">Answered?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">email@domain.com</th>
+                <td>12/02/2023</td>
+                <td>Y</td>
+              </tr>
+              <tr>
+                <th scope="row">email@domain.com</th>
+                <td>12/02/2023</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <th scope="row">email@domain.com</th>
+                <td>12/02/2023</td>
+                <td>Y</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </section>
     </section>
+    <section class="Registration-contact ">
+      <div>
+        <h2>Compose email</h2>
+        <section class="main-box">
+          <h2>Compose email</h2>
+          <div class="input-group mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
+        </section>
+      </div>
+      <section class="d-flex">
+        <button type="button" class="btn btn-outline-primary ms-auto end-btn">Send</button>
+      </section>
+    </section>
+
   </main>
   <!-- /Main -->
 
