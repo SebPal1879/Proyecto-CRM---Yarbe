@@ -7,7 +7,63 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styleR.css">
+    <link rel="stylesheet" href="../Universal/universal.css">
 </head>
+
+
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <div class="separator">
+                <a class="navbar-brand" href="#"><img src="../Imagenes/Ícono Yarbe.png"
+                        alt="Yarbe logo, cross inside square only, no text"></a>
+            </div>
+            <!--El div es para poder poner la línea vertical a la derecha-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <div class="a1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <article id="a2">Clients</article>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registration</a>
+                    </li>
+                    <li class="nav-item badge" id="current">
+                        <a class="nav-link" href="#">
+                            Update<article>Delete</article>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage<article>Products</article></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add<article>Products</article></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Interaction<article>Management
+                            </article></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ms-auto px-3" id="end-section">
+                <img src="../Imagenes/bell.svg" alt="Notification bell" id="notifbell">
+                <img src="../Imagenes/user.svg" alt="Icon circle" id="icircle">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- /Header -->
+
 <body>
     <div class="contenedor">
         <h1>Client Registration</h1>
@@ -16,43 +72,183 @@
         <div class="Registration-company">
             <h1>Company</h1>
 
-                <label for="Company-Name">Example</label>
-                <input type="text" id="Company-Name">
+                <div class="col-10" id="type-b">
+                <label for="Company-Name">Company Name</label>
+                <input type="text" id="Company-Name" placeholder="Example">
+                </div>
 
-                <label for="Company-Address">800 N. Lindbergh Blvd</label>
-                <input type="text" id="Company-Address">
+                <div class="col-10" id="type-b">
+                <label for="Company-Address">Company Address</label>
+                <input type="text" id="Company-Address" placeholder="800 N. Lindbergh Blvd">
+                </div>
 
-                <label for="Company-Phone">(+) 666-666-6666</label>
-                <input type="text" id="Company-Phone">
+                <div class="col-10" id="type-b">
+                <label for="Company-Phone">Company Phone</label>
+                <input type="text" id="Company-Phone" placeholder="(+) 666-666-6666">
+                </div>
 
-                <label for="Company-Email">Example@email.com</label>
-                <input type="text" id="Company-Email">
+                <div class="col-10" id="type-b">
+                <label for="Company-Email">Company Email</label>
+                <input type="text" id="Company-Email" placeholder="Example@email.com">
+                </div>
 
-                <label for="Company-NIT">Example</label>
-                <input type="text" id="Company-NIT">
+                <div class="col-10" id="type-b">
+                <label for="Company-NIT">Company NIT</label>
+                <input type="text" id="Company-NIT" placeholder="Example">
+                </div>
 
-                <label for="Company-Postal">Example</label>
-                <input type="text" id="Company-Postal">
+                <div class="col-10" id="type-b">
+                <label for="Company-Postal">Company Postal</label>
+                <input type="text" id="Company-Postal" placeholder="Example">
+                </div>
 
-                <label for="Company-Sector">Example</label>
-                <input type="text" id="Company-Sector">
-
+                <div class="col-12" id="type-b">
+                <label for="Company-Sector">Industry / Operating Sector</label>
+                <input type="text" id="Company-Sector" placeholder="Example">
+                </div>  
         </div>
 
         <div class="Registration-contact">
             <h1>Primary Contact</h1>
+
+                <div class="col-10" id="type-b">
+                <label for="First-Name">First Name</label>
+                <input type="text" id="First-Name" placeholder="Example">
+                </div>
+
+                <div class="col-10" id="type-b">
+                <label for="Last-Name">Last Name</label>
+                <input type="text" id="Last-Name" placeholder="Example">
+                </div>
+
+                <div class="col-10" id="type-b">
+                <label for="Company-Email">Company Email</label>
+                <input type="text" id="Company-Email" placeholder="Example@email.com">
+                </div>
+
+                <div class="col-10" id="type-b">
+                <label for="Company-Phone">Company Phone</label>
+                <input type="text" id="Company-Phone" placeholder="(+) 666-666-6666">
+                </div>
         </div>
 
         <div class="Registration-preference">
             <h1>Communication preferences</h1>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="C-Email">
+            <label for="check-button">Email</label>
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="C-Phone">
+            <label for="check-button">Phone</label>
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="C-Text-Message">
+            <label for="check-button">Text Message</label>
+            </div>
+            
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="C-Other">
+            <label for="check-button">Other</label>
+            <input type="text" id="C-Other-Input" placeholder="Which">
+            </div>
+
         </div>
 
         <div class="Registration-howDYH">
             <h1>How did You hear about Yarbe?</h1>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Email">
+            <label for="check-button">Email</label>
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Phone">
+            <label for="check-button">Phone</label>
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Other">
+            <label for="check-button">Other</label>
+            <input type="text" id="R-Other-Input" placeholder="Which">
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Social-Media">
+            <label for="check-button">Social Media</label>
+            <input type="text" id="R-Social-Media-Input" placeholder="Which">
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Text-Message">
+            <label for="check-button">Text Message</label>
+            </div>
+
+            <div class="col-10" id="type-b">
+            <input type="checkbox" id="R-Word-Of-Mouth">
+            <label for="check-button">R-Word-Of-Mouth</label>
+            </div> 
+
         </div>
 
-        <button class="Cancel" type="submit">Cancel</button>
-        <button class="Save" type="submit">Save</button>
+        <div class="d-flex justify-content-end final">
+            <button class="Cancel" type="submit">Cancel</button>
+            <button class="Save" type="submit">Save</button>
+        </div>
+        
     </div>
+
+
+<!-- footer -->
+<footer>
+    <section class="container-fluid">
+        <section class="row">
+            <figure class="col-6">
+                <img src="../Imagenes/Logotipo.png" alt="Yarbe logo, text included">
+            </figure>
+            <h1 class="col-6">
+                Project CRM
+            </h1>
+        </section>
+        <div class="row">
+            <ul class="row row-cols-2 col-6">
+                <li>
+                    Name of the company: <span id="mtext">Yarbe</span>
+                </li>
+                <li>
+                    Email: <span id="mtext">contact@yarbe.com</span>
+                </li>
+                <li>
+                    Company NIT: <span id="mtext">899998444-2</span>
+                </li>
+                <li>
+                    Contact phone: <span id="mtext">+57 344 5550099</span>
+                </li>
+                <li>
+                    Address: <span id="mtext">Calle Joaquin Turina, 2, 28224, Pozuelo Alarcon Madrid, Madrid</span>
+                </li>
+            </ul>
+            <ul class="col-6">
+                <li id="second-half">
+                    Teacher's name: <span id="mtext">David Córdoba Pimienta</span>
+                </li>
+                <li id="second-half">
+                    Student's name: <span id="mtext">Juan Estiven Quiroz Montoya</span>
+                </li>
+                <li id="second-half">
+                    Student's name: <span id="mtext">Jorge Eliécer Monsalve Zuluaga</span>
+                </li>
+                <li id="second-half">
+                    Student's name: <span id="mtext">Sebastián Alejandro Palacio Alzate</span>
+                </li>
+            </ul>
+        </div>
+</footer>
+<!-- /footer -->
+
 </body>
 </html>

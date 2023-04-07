@@ -3,12 +3,13 @@
 }
 
 body {
-  padding: 40px;
+  /*padding: 40px;*/
   margin: 0;
   font-family: "Bodoni MT";
 }
 
 .contenedor {
+  margin: 40px;
   min-height: calc(100vh - 80px);
   border-radius: 18px;
   overflow: hidden;
@@ -30,24 +31,38 @@ body {
   margin: 20px;
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+::placeholder {
+  color: #0D5FBD;
+  font-size: 16px;
+  text-align: center;
+}
+
+input {
+  padding-left: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  /*background-color: #F6F9FF;*/
+  height: 44px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#Company-Sector{
+  width: 284%;
+}
+
 .Registration-company h1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
-.Registration-company .Company-Name {
+
+.Registration-company #Company-Sector {
   grid-column-start: 1;
-  grid-column-end: 1;
-  border: none;
-}
-.Registration-company .Company-Address {
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-.Registration-company .Company-Phone {
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
 .Registration-contact {
@@ -58,6 +73,13 @@ body {
   padding: 40px;
   margin: 20px;
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Registration-contact h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .Registration-preference {
@@ -68,7 +90,39 @@ body {
   padding: 40px;
   margin: 20px;
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
+
+.Registration-preference h1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-bottom: 30px;
+}
+
+
+input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input[type=checkbox]:checked {
+  background-color: #0D5FBD;
+  border: 1px solid #0D5FBD;
+}
+
+label[for=check-button] {
+  font-size: 17px;
+  color: #0D5FBD;
+}
+
 
 .Registration-howDYH {
   border-radius: 18px;
@@ -78,6 +132,26 @@ body {
   padding: 40px;
   margin: 20px;
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Registration-howDYH h1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-bottom: 30px;
+}
+
+#C-Other-Input{
+  height: 100px;
+}
+
+#R-Social-Media-Input{
+  height: 100px;
+}
+
+#R-Other-Input{
+  height: 100px;
 }
 
 button.New-Client {
@@ -104,10 +178,7 @@ button.Cancel {
   font-size: 18px;
   height: 50px;
   width: 150px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 60px;
+  margin: 30px;
 }
 
 button.Save {
@@ -119,10 +190,7 @@ button.Save {
   font-size: 18px;
   height: 50px;
   width: 150px;
-  position: absolute;
-  bottom: 0;
-  right: 180px;
-  margin: 60px;
+  margin: 30px;
 }
 
 /*# sourceMappingURL=styleR.css.map */
