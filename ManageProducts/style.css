@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /*padding: 40px;*/
+    margin: 0;
+    font-family: "Bodoni MT";
+  }
+  
+  .contenedor {
+    margin: 40px;
+    min-height: calc(100vh - 80px);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #E7E7E7;
+    padding: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  .contenedor h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  ::placeholder {
+    color: #0D5FBD;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  input {
+    padding-left: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    /*background-color: #F6F9FF;*/
+    height: 44px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .Product{
+
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    margin: 40px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  input.ID{
+    grid-column: 1 / 2;
+  }
+
+  .Vendor{
+
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+    grid-column: 2 / 3;
+
+
+  }
+
+  .Sales{
+
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+    grid-column: 1 / 2;
+
+
+  }
+
+  .Stock{
+
+    
+    margin: 40px;
+    padding: 40px;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+
+  .Sales-revenue{
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    height: 160px;
+  }
+
+  .Stock-units{
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .Sold{
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;;
+  }
+
+  .Profit{
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+
+
+  button {
+
+    border-width: 0.5px;
+    background: #F6F9FF;
+    border-color: #0D5FBD;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 60px;
+  } 
