@@ -155,13 +155,15 @@ label[for=check-button] {
 }
 
 button.New-Client {
-  border: none;
-  background: #0D5FBD;
-  color: white;
+
+  border-width: 0.5px;
+  background: #F6F9FF;
+  border-color: #0D5FBD;
+  color: black;
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  height: 50px;
+  height: 40px;
   width: 150px;
   position: absolute;
   top: 0;
@@ -170,25 +172,27 @@ button.New-Client {
 }
 
 button.Cancel {
-  border: none;
-  background: #0D5FBD;
-  color: white;
+  border-width: 0.5px;
+  background: #F6F9FF;
+  border-color: #0D5FBD;
+  color: black;
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  height: 50px;
+  height: 40px;
   width: 150px;
   margin: 30px;
 }
 
 button.Save {
-  border: none;
-  background: #0D5FBD;
-  color: white;
+  border-width: 0.5px;
+  background: #F6F9FF;
+  border-color: #0D5FBD;
+  color: black;
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  height: 50px;
+  height: 40px;
   width: 150px;
   margin: 30px;
 }
