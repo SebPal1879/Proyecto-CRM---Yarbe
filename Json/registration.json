@@ -1,0 +1,38 @@
+{
+  "companyName": "Nombre de la empresa",
+  "companyAddress": "Dirección de la empresa",
+  "companyPhone": "Teléfono de la empresa",
+  "companyEmail": "Correo electrónico de la empresa",
+  "companyNIT": "NIT de la empresa",
+  "companyPostal": "Código postal de la empresa",
+  "companySector": "Sector de la empresa",
+  "primaryContact": {
+    "firstName": "Nombre del contacto principal",
+    "lastName": "Apellido del contacto principal",
+    "contactEmail": "Correo electrónico del contacto principal",
+    "contactPhone": "Teléfono del contacto principal"
+  },
+  "communicationPreferences": {
+    "email": true,
+    "phone": true,
+    "textMessage": false,
+    "other": {
+      "checked": false,
+      "value": ""
+    }
+  },
+  "howDidYouHearAboutUs": {
+    "email": true,
+    "phone": false,
+    "socialMedia": {
+      "checked": true,
+      "value": "Facebook"
+    },
+    "other": {
+      "checked": false,
+      "value": ""
+    },
+    "textMessage": false,
+    "wordOfMouth": true
+  }
+}
