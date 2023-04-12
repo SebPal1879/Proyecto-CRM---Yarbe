@@ -19,13 +19,9 @@ body {
   margin-top: 30px;
   border-radius: 18px;
   border: 1px solid #E7E7E7;
-  overflow: hidden;
   padding: 15px 30px;
-  position: relative;
   width: 48%;
 }
-
-
 
 .Registration-contact h1 {
   font-size: 26px;
@@ -41,11 +37,11 @@ input {
   width: 100%;
 }
 
-main form {
+.ex-form {
   font-weight: bold;
 }
 
-main form div {
+.ex-form div {
   padding-bottom: 20px;
 }
 
@@ -86,9 +82,10 @@ main form div {
 }
 
 .dropdown-menu--overlap {
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 
 .final {
   padding-top: 40px;
 }
+

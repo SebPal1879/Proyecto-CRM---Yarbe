@@ -43,6 +43,10 @@
     width: 100%;
 } */
 
+.clearfix{
+    clear: both;
+}
+
 
 .uno {
     clear: none;
@@ -96,4 +100,8 @@
  
  input {
     text-align: start;
+ }
+
+ .input-group-text {
+    width: 170px;
  }

@@ -9,6 +9,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="../Universal/universal.css">
+  <link rel="stylesheet" href="../../../">
 </head>
 
 <body>
@@ -28,29 +29,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex align-items-center">
-            <div class="a1">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <article id="a2">Clients</article>
-                </a>
-              </li>
-            </div>
             <li class="nav-item">
-              <a class="nav-link" href="#">Registration</a>
+              <a class="nav-link" href="../Clients/index.html">
+                <article id="a2">Clients</article>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="../Registration/index.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../UpdateDelete/index.html">
                 Update<article>Delete</article>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Manage<article>Products</article></a>
+              <a class="nav-link" href="../">Manage<article>Products</article></a>
             </li>
             <li class="nav-item badge" id="current">
-              <a class="nav-link" href="#">Add<article>Products</article></a>
+              <a class="nav-link">Add<article>Products</article></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Interaction<article>Management</article></a>
+              <a class="nav-link active" aria-current="page" href="../InteractionManagement/index.html">Interaction
+                <article>Management</article></a>
             </li>
           </ul>
         </div>
@@ -69,226 +69,215 @@
     <section class="Registration-contact ">
       <div class="d-flex">
         <h1>Product Registration</h1>
-        <button type="button" class="btn btn-outline-primary ms-auto end-btn" id="add-product">Add another product</button>
+        <button type="button" class="btn btn-outline-primary ms-auto end-btn" id="add-product">Add another
+          product</button>
       </div>
-      <section class="d-flex justify-content-between row">
-        <div class="contenedor col-6">
-          <h4>General specifications</h4>
-          <section>
-            <form class="row d-flex">
-              <div class="col-6">
-                <label for="prodTName" class="form-label">Product trade name</label>
-                <input type="text" name="form-control" id="prodTName">
-              </div>
-              <div class="col-6" id="type-b">
-                <label for="prodFName" class="form-label">Product formal name</label>
-                <input type="text" class="d-flex" name="form-control" id="prodFName">
-              </div>
-              <div class="col-6" id="type-b">
-                <label for="prodID" class="form-label">Product ID</label>
-                <input type="text" class="d-flex" name="form-control" id="prodID">
-              </div>
-              <div class="col-6" id="type-b">
-                <label for="prodBN" class="form-label">Product barcode number</label>
-                <input type="text" class="d-flex" name="form-control" id="prodBN">
-              </div>
-              <div class="col-6" id="type-b">
-                <label for="prodPcr" class="form-label">Producer</label>
-                <input type="text" class="d-flex" name="form-control" id="prodPcr">
-              </div>
-              <div class="col-6" id="type-b">
-                <label for="prodSlrs" class="form-label">Seller(s)</label>
-                <input type="text" class="d-flex" name="form-control" id="prodSlrs">
-              </div>
-              <div class="d-flex" id="list">
-                <div class="dropdown">
-                  <label for="dropdwn" class="form-label d-block">Countries available</label>
-                  <button class="btn btn-list dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" id="btn-list">
-                    Select country(ies) available
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                        <input class="form-check-input" type="checkbox" value="Colombia" id="CO">
-                        <label class="form-check-label" for="CO">Colombia</label>
-                      </a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">
-                        <input class="form-check-input" type="checkbox" value="Spain" id="SP">
-                        <label class="form-check-label" for="SP">Spain</label>
-                      </a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">
-                        <input class="form-check-input" type="checkbox" value="United States" id="US">
-                        <label class="form-check-label" for="US">United States</label>
-                      </a>
-                    </li>
-                  </ul>
+      <form method="get" id="forma">
+        <section class="d-flex justify-content-between row">
+          <div class="contenedor col-6">
+            <h4>General specifications</h4>
+            <section>
+              <div class="row d-flex ex-form">
+                <div class="col-6">
+                  <label for="prodTName" class="form-label">Product trade name</label>
+                  <input type="text" name="form-control" id="prodTName">
+                </div>
+                <div class="col-6" id="type-b">
+                  <label for="prodFName" class="form-label">Product formal name</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodFName">
+                </div>
+                <div class="col-6" id="type-b">
+                  <label for="prodID" class="form-label">Product ID</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodID">
+                </div>
+                <div class="col-6" id="type-b">
+                  <label for="prodBN" class="form-label">Product barcode number</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodBN">
+                </div>
+                <div class="col-6" id="type-b">
+                  <label for="prodPcr" class="form-label">Producer</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodPcr">
+                </div>
+                <div class="col-6" id="type-b">
+                  <label for="prodSlrs" class="form-label">Seller(s)</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodSlrs">
+                </div>
+                <div class="d-flex" id="list">
+                  <div class="dropdown">
+                    <label for="dropdwn" class="form-label d-block">Countries available</label>
+                    <button class="btn btn-list dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" id="btn-list">
+                      Select country(ies) available
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">
+                          <input class="form-check-input" type="checkbox" value="Colombia" id="CO">
+                          <label class="form-check-label" for="CO">Colombia</label>
+                        </a>
+                      </li>
+                      <li><a class="dropdown-item">
+                          <input class="form-check-input" type="checkbox" value="Spain" id="SP">
+                          <label class="form-check-label" for="SP">Spain</label>
+                        </a>
+                      </li>
+                      <li><a class="dropdown-item">
+                          <input class="form-check-input" type="checkbox" value="United States" id="US">
+                          <label class="form-check-label" for="US">United States</label>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  
                 </div>
               </div>
-            </form>
-          </section>
-        </div>
+            </section>
+          </div>
 
-        <div class="contenedor col-6">
-          <h4>Consumption specifications</h4>
-          <section>
-            <form class="row d-flex">
-              <div class="col-6">
-                <label for="minAge" class="form-label">Minimum age recommended</label>
-                <input type="text" name="form-control" id="minAge">
+          <div class="contenedor col-6 ex-form">
+            <h4>Consumption specifications</h4>
+            <section>
+              <div class="row d-flex">
+                <div class="col-6">
+                  <label for="minAge" class="form-label">Minimum age recommended</label>
+                  <input type="number" name="form-control" id="minAge">
+                </div>
+
+                <div class="col-6" id="type-b">
+                  <label for="maxAge" class="form-label">Maximum age recommended</label>
+                  <input type="number" class="d-flex" name="form-control" id="maxAge">
+                </div>
+
+                <div class="col-6">
+                  <label for="tgMkt" class="form-label">Target Market</label>
+                  <input type="text" class="d-flex" name="form-control" id="tgMkt">
+                </div>
+
+                <div class="col-6">
+                  <label for="admRt" class="form-label">Route of administration</label>
+                  <input type="text" class="d-flex" name="form-control" id="admRt">
+                </div>
+
+                <div class="col-6">
+                  <label for="prodTp" class="form-label">Product type</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodTp">
+                </div>
+
+                <div class="col-6">
+                  <label for="lifeTime" class="form-label">Lifetime</label>
+
+                  <section class="d-flex">
+                    <input type="number" name="form-control" id="lifeTime">
+                    <section class="btn-group">
+                      <button type="button" class="btn" id="btn-list">Time</button>
+                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Hours</a></li>
+                        <li><a class="dropdown-item">Days</a></li>
+                        <li><a class="dropdown-item">Weeks</a></li>
+                        <li><a class="dropdown-item">Months</a></li>
+                        <li><a class="dropdown-item">Years</a></li>
+                      </ul>
+                    </section>
+                  </section>
+
+                </div>
+                <div class="col-6 d-flex">
+                  <section>
+                    <label for="qty" class="form-label" id="qty">Quantity</label>
+                    <input type="number" class="d-flex" name="form-control" id="qty">
+                  </section>
+                  <section class="ms-auto">
+                    <label for="amt" class="form-label">Amount per unit</label>
+                    <section class="d-flex">
+                      <input type="number" name="form-control" id="amt">
+                      <section class="btn-group ms-auto">
+                        <button type="button" class="btn" id="btn-list">mg</button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu--overlap">
+                          <li><a class="dropdown-item">mg</a></li>
+                          <li><a class="dropdown-item">g</a></li>
+                          <li><a class="dropdown-item">ml</a></li>
+                        </ul>
+                      </section>
+                    </section>
+                  </section>
+
+                </div>
+                <div class="col-6">
+                  <label for="prodTp" class="form-label">Contraindications</label>
+                  <input type="text" class="d-flex" name="form-control" id="prodTp">
+                </div>
               </div>
+            </section>
+          </div>
+          <div class="contenedor col-6">
+            <h4>Requesting client</h4>
 
-              <div class="col-6" id="type-b">
-                <label for="maxAge" class="form-label">Maximum age recommended</label>
-                <input type="text" class="d-flex" name="form-control" id="maxAge">
+            <section>
+              <div class="row d-flex ex-form">
+                <div class="col-6">
+                  <label for="csID" class="form-label">Customer UID</label>
+                  <input type="text" name="form-control" id="csID">
+                </div>
+                <div class="col-6">
+                  <label for="csName" class="form-label">Customer name</label>
+                  <input type="text" name="form-control" id="csName">
+                </div>
               </div>
+            </section>
 
-              <div class="col-6">
-                <label for="tgMkt" class="form-label">Target Market</label>
-                <input type="text" class="d-flex" name="form-control" id="tgMkt">
-              </div>
-
-              <div class="col-6">
-                <label for="admRt" class="form-label">Route of administration</label>
-                <input type="text" class="d-flex" name="form-control" id="admRt">
-              </div>
-
-              <div class="col-6">
-                <label for="prodTp" class="form-label">Product type</label>
-                <input type="text" class="d-flex" name="form-control" id="prodTp">
-              </div>
-
-              <div class="col-6">
-                <label for="lifeTime" class="form-label">Lifetime</label>
-
-                <section class="d-flex">
-                  <input type="text" name="form-control" id="lifeTime">
-                  <section class="btn-group">
-                    <button type="button" class="btn" id="btn-list">Time</button>
+          </div>
+          <div class="contenedor col-6">
+            <h4>Other</h4>
+            <section>
+              <div class="d-flex row ex-form" id="other">
+                <section class="col-3">
+                  <label for="" class="form-label d-block">Initial stock?</label>
+                  <section class="btn-group me-auto">
+                    <button type="button" class="btn" id="btn-list">Yes</button>
                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
                       aria-expanded="false" data-bs-reference="parent" id="btn-list">
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Hours</a></li>
-                      <li><a class="dropdown-item">Days</a></li>
-                      <li><a class="dropdown-item">Weeks</a></li>
-                      <li><a class="dropdown-item">Months</a></li>
-                      <li><a class="dropdown-item">Years</a></li>
+                    <ul class="dropdown-menu dropdown-menu--overlap ">
+                      <li><a class="dropdown-item">Yes</a></li>
+                      <li><a class="dropdown-item">No</a></li>
                     </ul>
                   </section>
                 </section>
 
-              </div>
-              <div class="col-6 d-flex">
-                <section>
-                  <label for="qty" class="form-label" id="qty">Quantity</label>
-                  <input type="text" class="d-flex" name="form-control" id="qty">
-                </section>
-                <section class="ms-auto">
-                  <label for="amt" class="form-label">Amount per unit</label>
-                  <section class="d-flex">
-                    <input type="text" name="form-control" id="amt">
-                    <section class="btn-group ms-auto">
-                      <button type="button" class="btn" id="btn-list">mg</button>
-                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
-                        aria-expanded="false" data-bs-reference="parent" id="btn-list">
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu--overlap">
-                        <li><a class="dropdown-item">mg</a></li>
-                        <li><a class="dropdown-item">g</a></li>
-                        <li><a class="dropdown-item">ml</a></li>
-                      </ul>
-                    </section>
+                <div class="col-4">
+                  <label for="isku" class="form-label">Initial stock units</label>
+                  <input type="number" class="d-flex" name="form-control" id="isku">
+                </div>
+
+                <section class="col ms-auto">
+                  <label for="" class="form-label d-flex">Already on the market?</label>
+                  <section class="btn-group me-auto">
+                    <button type="button" class="btn" id="btn-list">Yes</button>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                      aria-expanded="false" data-bs-reference="parent" id="btn-list">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu--overlap ">
+                      <li><a class="dropdown-item">Yes</a></li>
+                      <li><a class="dropdown-item">No</a></li>
+                    </ul>
                   </section>
                 </section>
-
               </div>
-              <div class="col-6">
-                <label for="prodTp" class="form-label">Contraindications</label>
-                <input type="text" class="d-flex" name="form-control" id="prodTp">
-              </div>
-            </form>
-          </section>
+            </section>
+          </div>
+        </section>
+        <div class="d-flex justify-content-end final">
+          <button type="button" class="btn btn-outline-primary end-btn" id="cl">Cancel</button>
+          <button type="button submit" class="btn btn-outline-primary end-btn" id="sv">Save</button>
+          <!-- <button type="button submit" class="btn btn-outline-primary end-btn" onclick="showModal();" >Add</button> -->
         </div>
-        <div class="contenedor col-6">
-          <h4>Requesting client</h4>
+      </form>
 
-          <section>
-            <form class="row d-flex">
-              <div class="col-6">
-                <label for="csID" class="form-label">Customer UID</label>
-                <input type="text" name="form-control" id="csID">
-              </div>
-              <div class="col-6">
-                <label for="csName" class="form-label">Customer name</label>
-                <input type="text" name="form-control" id="csName">
-              </div>
-            </form>
-          </section>
-
-        </div>
-        <div class="contenedor col-6">
-          <h4>Other</h4>
-          <section>
-            <form class="d-flex row" id="other">
-              
-              <section class="col-3">
-                <label for="" class="form-label d-block">Initial stock?</label>
-                <section class="btn-group me-auto">
-                  <button type="button" class="btn" id="btn-list">Yes</button>
-                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
-                    aria-expanded="false" data-bs-reference="parent" id="btn-list">
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu--overlap ">
-                    <li><a class="dropdown-item">Yes</a></li>
-                    <li><a class="dropdown-item">No</a></li>
-                  </ul>
-                </section>
-              </section>
-
-              <div class="col-4" >
-                <label for="isku" class="form-label">Initial stock units</label>
-                <input type="text" class="d-flex" name="form-control" id="isku">
-              </div>
-
-              <section class="col ms-auto">
-                <label for="" class="form-label d-flex">Already on the market?</label>
-                <section class="btn-group me-auto">
-                  <button type="button" class="btn" id="btn-list">Yes</button>
-                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
-                    aria-expanded="false" data-bs-reference="parent" id="btn-list">
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu--overlap ">
-                    <li><a class="dropdown-item">Yes</a></li>
-                    <li><a class="dropdown-item">No</a></li>
-                  </ul>
-                </section>
-              </section>
-            </form>
-          </section>
-
-
-
-          <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
-
-
-        </div>
-      </section>
-      <div class="d-flex justify-content-end final">
-        <button type="button" class="btn btn-outline-primary end-btn" id="cl">Cancel</button>
-        <button type="button" class="btn btn-outline-primary end-btn" id="sv">Save</button>
-        <button type="button" class="btn btn-outline-primary end-btn" id="add">Add</button>
-      </div>
     </section>
   </main>
   <!-- /Main -->
@@ -340,9 +329,55 @@
   </footer>
   <!-- /footer -->
 
+  <!--Modals-->
+  <div class="modal" tabindex="-1" id="mi-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><strong>WARNING</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>All fields are mandatory.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="age-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><strong>WARNING</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Minimum age recommended should be no more than maximum age recommended</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="age-modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><strong>WARNING</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Ages should be greater or equal than 0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+  <script src="../JavaScript/javscript.js"></script>
+
+
 </body>
 
 </html>

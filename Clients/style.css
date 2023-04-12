@@ -44,11 +44,6 @@ body {
   font-weight: bold;
 }
 
-#current {
-  font-size: 22px !important;
-  background-color: #38D688;
-}
-
 #add-product {
   background-color: #F6F9FF;
   color: #666666;
