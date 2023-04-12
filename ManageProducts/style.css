@@ -51,11 +51,25 @@
     padding: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
+   
   }
 
+  .Product h1{
+
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+
+  }
+  
   input.ID{
     grid-column: 1 / 2;
+  }
+
+  .Botones{
+    grid-column: 1 / 2;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   .Vendor{
@@ -65,9 +79,102 @@
     margin: 40px;
     padding: 40px;
     grid-column: 2 / 3;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
   }
+
+  .Vendor-name{
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .Vendor h1{
+    margin-bottom: 20px;
+  }
+
+
+
+  .Vendor1 {
+    position: relative; /* Establece la posición relativa para que se pueda posicionar el punto de color */
+    padding-left: 30px; /* Agrega un espacio a la izquierda del nombre para dejar espacio para el punto de color */
+    margin-bottom: 10px;
+  }
+  
+  .Vendor1::before {
+    content: ""; /* Agrega un contenido vacío para que se muestre el punto de color */
+    display: inline-block; /* Establece el contenido como un elemento en línea */
+    position: absolute; /* Establece la posición absoluta para poder posicionar el punto de color */
+    left: 0; /* Posiciona el punto de color a la izquierda del elemento que contiene el nombre */
+    width: 15px; /* Establece el ancho del punto de color */
+    height: 15px; /* Establece la altura del punto de color */
+    border-radius: 50%; /* Establece la forma redonda del punto de color */
+    background-color: #38D688; /* Establece el color del punto de color */
+    top: 50%; /* Centra verticalmente el punto de color en el elemento que contiene el nombre */
+    transform: translateY(-50%); /* Centra verticalmente el punto de color en el elemento que contiene el nombre */
+  }
+
+  .Vendor2 {
+    position: relative; 
+    padding-left: 30px; 
+    margin-bottom: 10px;
+  }
+  
+  .Vendor2::before {
+    content: ""; 
+    display: inline-block; 
+    position: absolute;
+    left: 0; 
+    width: 15px;
+    height: 15px; 
+    border-radius: 50%; 
+    background-color: #38CFD6; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+
+  .Vendor3 {
+    position: relative; 
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .Vendor3::before {
+    content: ""; 
+    display: inline-block; 
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #388DD6;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .Vendor4 {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .Vendor4::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0D5FBD;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+ 
 
   .Sales{
 
@@ -77,16 +184,17 @@
     padding: 40px;
     grid-column: 1 / 2;
 
+  }
 
+  .Sales h1{
+    margin-bottom: 80px;
   }
 
   .Stock{
 
-    
     margin: 40px;
     padding: 40px;
     grid-column: 2 / 3;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -98,7 +206,8 @@
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .Stock-units{
@@ -106,25 +215,45 @@
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .Sold{
     border: 1px solid #E7E7E7;
     border-radius: 10px;
     margin: 20px;
-    padding: 20px;;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .Profit{
     border: 1px solid #E7E7E7;
     border-radius: 10px;
     margin: 20px;
+    margin-top: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .Stock h2{
+    font-size: 14px;
+    grid-column: 2 / 3;
+    
+  }
+
+  .Stock h1{
+    font-size: 28px;
+    grid-column: 2 / 3;
+    
   }
 
 
 
-  button {
+  button.New-Client {
 
     border-width: 0.5px;
     background: #F6F9FF;
@@ -139,4 +268,19 @@
     top: 0;
     right: 0;
     margin: 60px;
+  } 
+
+  button {
+
+    border-width: 0.5px;
+    background: #F6F9FF;
+    border-color: #0D5FBD;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
   } 
